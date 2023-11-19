@@ -1,10 +1,11 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: cursive;
 }
-body{
+
+body {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -15,7 +16,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.container{
+
+.container {
     width: 80%;
     height: 80%;
     display: flex;
@@ -25,18 +27,21 @@ body{
     gap: 50px;
 
 }
-.container .addInfo{
+
+.container .addInfo {
     width: 100%;
     display: flex;
     gap: 20px;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255 , 255 , 255 , 0.6 );
+    background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(20px);
+    box-shadow: 0 0 20px snow;
     border-radius: 20px;
     padding: 30px 0px;
 }
-input{
+
+input {
     width: 100%;
     padding: 10px 30px;
     font-size: 19px;
@@ -46,7 +51,7 @@ input{
     text-transform: capitalize;
 }
 
-button{
+button {
     padding: 10px 30px;
     font-size: 19px;
     border: none;
@@ -55,34 +60,51 @@ button{
     scale: 1;
     transition: all 0.5s ease;
 }
-button:hover{
+
+button:hover {
     box-shadow: inset 1px 1px 11px 100px green;
     cursor: pointer;
     scale: 0.95;
     transition: all 0.8s ease;
 }
-table{
+
+table {
     width: 100%;
     padding: 30px 30px;
     font-size: 19px;
-    background-color: rgba(255 , 255 , 255 , 0.6);
+    background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(20px);
     border-radius: 20px;
+    box-shadow: 0 0 20px snow;
 }
-thead{
+
+thead {
     width: 100%;
     height: 70px;
     background-color: snow;
     border: 10px solid blue;
     text-align: center;
     font-weight: 900;
-    color: red;
+    box-shadow: inset 1px 1px 11px 0px navy;
+    border-radius: 20px;
+    color: snow;
+    text-shadow: 0 0 7px red;
 }
-tbody tr{
+tr{
+    border-radius: 20px;
+}
+
+tbody tr {
     height: 40px;
     text-align: center;
     text-transform: capitalize;
+    box-shadow: inset 1px 1px 11px 0px navy;
+    font-weight: 700;
+    color: snow;
+    text-shadow: 0 0 10px darkblue;
 }
-td{
-border: 1px solid blue;
+
+td {
+    border: 1px solid blue;
+    border-radius: 20px;
 }
